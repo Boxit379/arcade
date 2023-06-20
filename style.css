@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #050505;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: sticky;
+    z-index: 1;
+    height: 18vh;
+}
+
+#choice, #game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    height: 82vh;
+}
+
+button {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: white 2px solid;
+    background-color: #000000;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+#game-over {
+    display: none;
+}
+
+.meter {
+    margin: 10px;
+    border: white 2px solid;
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.meter-value {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.meter > .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+#date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}

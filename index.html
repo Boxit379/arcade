@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bfaa57d2a3.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="meter">
+            <div class="meter-value" id="economy"></div>
+            <i class="fa-solid fa-dollar-sign icon"></i>
+        </div>
+        <div class="meter">
+            <div class="meter-value" id="happiness"></div>
+            <i class="fa-solid fa-user icon"></i>
+        </div>
+        <div class="meter">
+            <div class="meter-value" id="safety"></div>
+            <i class="fa-solid fa-shield icon"></i>
+        </div>
+        <div class="meter">
+            <div class="meter-value" id="infrastructure"></div>
+            <i class="fa-solid fa-building icon"></i>
+        </div>
+    </header>
+    <main>
+        <div id="choice"></div>
+        <div id="game-over">
+            <h1>Game Over</h1>
+            <h2>You survived for <span id="score"></span> years!</h2>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
